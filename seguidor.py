@@ -51,7 +51,7 @@ def calibrar():
     # Objetivo a la mitad (borde de la línea)
     target = (black + white) / 2.0
     snd.speak('Listo')
-    print(f"Calibrado: black={black}, white={white}, target={target}")
+    print("Calibrado: black={}, white={}, target={}".format(black, white, target))
     return black, white, target
 
 def seguir_linea(black, white, target):
